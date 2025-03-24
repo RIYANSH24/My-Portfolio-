@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riyansh Gupta - Education & More</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1c1c1c 0%, #2d2d2d 100%);
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6600 0%, #ff8533 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 2em;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(255, 102, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #fff, transparent);
+            animation: shine 2s infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            padding: 2rem;
+            margin: 2rem 0;
+            background: rgba(51, 51, 51, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            color: #ff6600;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(255, 102, 0, 0.3);
+        }
+
+        .content-block {
+            margin-bottom: 2rem;
+        }
+
+        .skill-item, .achievement-item {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+            padding: 0.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .skill-item i, .achievement-item i {
+            margin-right: 1rem;
+            color: #ff6600;
+        }
+
+        .highlight-silver {
+            color: #C0C0C0;
+            font-weight: 500;
+            text-shadow: 0 0 10px rgba(192, 192, 192, 0.3);
+        }
+
+        .highlight-gold {
+            color: #FFD700;
+            font-weight: 500;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+        }
+
+        .hobby-item {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: rgba(255, 102, 0, 0.1);
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .hobby-item:hover {
+            background: rgba(255, 102, 0, 0.2);
+        }
+
+        .about-me {
+            font-style: italic;
+            padding: 1.5rem;
+            border-left: 4px solid #ff6600;
+            background: rgba(255, 102, 0, 0.05);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        ABOUT MY EDUCATION AND MORE
+    </header>
+
+    <div class="container">
+        <section>
+            <div class="content-block">
+                <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="skill-item">
+                    <i class="fas fa-school"></i>
+                    <div>School: Virendra Public School, Batch of 2023</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-university"></i>
+                    <div>Graduation: Jagannath University</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <div>Course: Bachelor of Business Administration in Digital Marketing</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div>Batch: 2024-2027</div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h2 class="section-title"><i class="fas fa-star"></i> Skills & Achievements</h2>
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <div>Proficient in basic front-end development, Tally ERP 9, and Tally Prime</div>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-medal"></i>
+                    <div>Awarded a <span class="highlight-silver">Silver</span> medal in wrestling</div>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-trophy"></i>
+                    <div>A <span class="highlight-gold">Gold</span> medal in tug-of-war</div>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-users"></i>
+                    <div>Head volunteer of the college sports club</div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h2 class="section-title"><i class="fas fa-heart"></i> Hobbies</h2>
+                <div class="hobby-item">
+                    <i class="fas fa-plane"></i>
+                    <div>Passionate about traveling and discovering new cuisines</div>
+                </div>
+                <div class="hobby-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <div>Enjoys working on creative projects</div>
+                </div>
+            </div>
+
+            <div class="about-me">
+                <h2 class="section-title"><i class="fas fa-user"></i> Something About Me</h2>
+                <p>As a dedicated student in digital marketing, I thrive on learning new concepts and applying them to real-world scenarios.</p>
+                <p>My background in sports has instilled a strong sense of discipline and teamwork, which I bring to every aspect of my academic and personal life.</p>
+                <p>I am always eager to explore new opportunities and challenges, making every experience a chance to grow and succeed.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+
